@@ -1,0 +1,1 @@
+# pytest_allure_api_automation
