@@ -1,0 +1,17 @@
+{
+  "dev": {
+    "base_url": "https://api.restful-api.dev",
+    "endpoints": [ {
+      "get_objects": "/objects"
+      }
+    ]
+  },
+  "qa": {
+    "base_url": "https://qa.example.com/api",
+    "token": "qa-token-456"
+  },
+  "prod": {
+    "base_url": "https://prod.example.com/api",
+    "token": "prod-token-789"
+  }
+}

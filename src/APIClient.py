@@ -9,7 +9,7 @@ class APIClient:
     def get(self, endpoint, headers=None, params=None):
         try:
             url = f"{self.base_url}/{endpoint}"
-            response = requests.get(url, headers=self.headers, params=params)
+            response = requests.get(url, params=params)
             return response
         except Timeout as errt:
             print(f"Timeout error: {errt}")
