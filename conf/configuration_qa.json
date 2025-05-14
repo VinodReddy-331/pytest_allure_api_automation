@@ -1,6 +1,8 @@
 {
   "dev": {
+    "web_url": "https://restful-api.dev/",
     "base_url": "https://api.restful-api.dev",
+    "Content-Type": "application/json",
     "endpoints": [ {
       "get_objects": "/objects"
       }

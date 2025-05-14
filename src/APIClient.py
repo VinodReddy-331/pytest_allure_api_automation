@@ -17,11 +17,11 @@ class APIClient:
             print(error)
 
 
-    def post(self, endpoint, data=None):
+    def post(self, endpoint, headers=None, data=None):
         try:
             url = f"{self.base_url}/{endpoint}"
-            response = requests.post(url, headers=self.headers, json=data)
-            return self._handle_response(response)
+            response = requests.post(url, headers= headers,json=data)
+            return response
         except requests.exceptions.Timeout as errt:
             print(f"Timeout error: {errt}")
         except Exception as error:
