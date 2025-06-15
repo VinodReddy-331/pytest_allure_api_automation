@@ -11,6 +11,11 @@
 python -m pytest .\tests\test_restful_api.py --html-report=./report
  --alluredir=allure-results
 
+- Below command is used to run the testcases in parallel.
+python -m pytest -n <no_of_workers> --dist=loadscope .\tests\
+Example: python -m pytest -n 4 --dist=loadscope .\tests\
+where -n denotes no of worker and --dist=loadscope denotes the load per testfile.
+
 
 - Below commands are used to generate Allure Report
   1. allure generate allure-results -o allure-report --clean
